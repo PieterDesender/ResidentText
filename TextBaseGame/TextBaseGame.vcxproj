@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BCC38216-3E15-4129-877D-6E4C66EE0E3A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TextBaseGame</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\HOWEST\programming\4\TextBaseGame\antler\antlr4-runtime;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\HOWEST\programming\4\TextBaseGame\antler\antlr4-runtime\bin\vs-2015\x64\Debug DLL;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\HOWEST\programming\4\TextBaseGame\antler\antlr4-runtime\src;D:\HOWEST\programming\4\TextBaseGame\antler\antlr4-runtime;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\HOWEST\programming\4\TextBaseGame\antler\antlr4-runtime\bin\vs-2015\x64\Debug DLL;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\HOWEST\programming\4\TextBaseGame\antler\antlr4-runtime;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\HOWEST\programming\4\TextBaseGame\antler\antlr4-runtime\bin\vs-2015\x64\Debug DLL;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\HOWEST\programming\4\TextBaseGame\antler\antlr4-runtime\src;D:\HOWEST\programming\4\TextBaseGame\antler\antlr4-runtime;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\HOWEST\programming\4\TextBaseGame\antler\antlr4-runtime\bin\vs-2015\x64\Debug DLL;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>antlr4-runtime.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>antlr4-runtime.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>COPY ".\..\..\antler\antlr4-runtime\bin\vs-2015\x64\Debug DLL\antlr4-runtime.dll" "..\x64\Debug\antlr4-runtime.dll"
+COPY ".\..\..\antler\antlr4-runtime\bin\vs-2015\x64\Debug DLL\antlr4-runtime.dll" "..\x64\Release\antlr4-runtime.dll"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>antlr4-runtime.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>antlr4-runtime.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>COPY ".\..\..\antler\antlr4-runtime\bin\vs-2015\x64\Debug DLL\antlr4-runtime.dll" "..\x64\Debug\antlr4-runtime.dll"
+COPY ".\..\..\antler\antlr4-runtime\bin\vs-2015\x64\Debug DLL\antlr4-runtime.dll" "..\x64\Release\antlr4-runtime.dll"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ANTLR\Build_Interactions\interactionsBaseListener.h" />
+    <ClInclude Include="ANTLR\Build_Interactions\interactionsBaseVisitor.h" />
+    <ClInclude Include="ANTLR\Build_Interactions\interactionsLexer.h" />
+    <ClInclude Include="ANTLR\Build_Interactions\interactionsListener.h" />
+    <ClInclude Include="ANTLR\Build_Interactions\interactionsParser.h" />
+    <ClInclude Include="ANTLR\Build_Interactions\interactionsVisitor.h" />
+    <ClInclude Include="ANTLR\Build_Interactions\MyinteractionsVisitor.h" />
+    <ClInclude Include="ANTLR\Build_Items\itemsBaseListener.h" />
+    <ClInclude Include="ANTLR\Build_Items\itemsBaseVisitor.h" />
+    <ClInclude Include="ANTLR\Build_Items\itemsLexer.h" />
+    <ClInclude Include="ANTLR\Build_Items\itemsListener.h" />
+    <ClInclude Include="ANTLR\Build_Items\itemsParser.h" />
+    <ClInclude Include="ANTLR\Build_Items\itemsVisitor.h" />
+    <ClInclude Include="ANTLR\Build_Items\MyItemsVisitor.h" />
+    <ClInclude Include="ANTLR\Build_WorldObjects\MyWorldObjectsVisitor.h" />
+    <ClInclude Include="ANTLR\Build_WorldObjects\WorldObjectsBaseListener.h" />
+    <ClInclude Include="ANTLR\Build_WorldObjects\WorldObjectsBaseVisitor.h" />
+    <ClInclude Include="ANTLR\Build_WorldObjects\WorldObjectsLexer.h" />
+    <ClInclude Include="ANTLR\Build_WorldObjects\WorldObjectsListener.h" />
+    <ClInclude Include="ANTLR\Build_WorldObjects\WorldObjectsParser.h" />
+    <ClInclude Include="ANTLR\Build_WorldObjects\WorldObjectsVisitor.h" />
+    <ClInclude Include="ANTLR\Build_World\MyWorldVisitor.h" />
+    <ClInclude Include="ANTLR\Build_World\WorldBaseListener.h" />
+    <ClInclude Include="ANTLR\Build_World\WorldBaseVisitor.h" />
+    <ClInclude Include="ANTLR\Build_World\WorldLexer.h" />
+    <ClInclude Include="ANTLR\Build_World\WorldListener.h" />
+    <ClInclude Include="ANTLR\Build_World\WorldParser.h" />
+    <ClInclude Include="ANTLR\Build_World\WorldVisitor.h" />
+    <ClInclude Include="Enumeration.h" />
+    <ClInclude Include="Events\EventActions.h" />
+    <ClInclude Include="Events\EventConditions.h" />
+    <ClInclude Include="Managers\EventManager.h" />
+    <ClInclude Include="GameObjects\Creature.h" />
+    <ClInclude Include="GameObjects\GameObject.h" />
+    <ClInclude Include="GameObjects\Player.h" />
+    <ClInclude Include="Helpers.h" />
+    <ClInclude Include="Items\Inventory.h" />
+    <ClInclude Include="Items\Item.h" />
+    <ClInclude Include="Managers\ConnectionManager.h" />
+    <ClInclude Include="Managers\GameManager.h" />
+    <ClInclude Include="Managers\InteractionsManager.h" />
+    <ClInclude Include="Managers\ItemManager.h" />
+    <ClInclude Include="Managers\NodeManager.h" />
+    <ClInclude Include="Managers\WorldObjectManager.h" />
+    <ClInclude Include="ResidentText.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="Structs.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="World\Connection.h" />
+    <ClInclude Include="World\Node.h" />
+    <ClInclude Include="World\WorldObject.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ANTLR\Build_Interactions\interactionsBaseListener.cpp" />
+    <ClCompile Include="ANTLR\Build_Interactions\interactionsBaseVisitor.cpp" />
+    <ClCompile Include="ANTLR\Build_Interactions\interactionsLexer.cpp" />
+    <ClCompile Include="ANTLR\Build_Interactions\interactionsListener.cpp" />
+    <ClCompile Include="ANTLR\Build_Interactions\interactionsParser.cpp" />
+    <ClCompile Include="ANTLR\Build_Interactions\interactionsVisitor.cpp" />
+    <ClCompile Include="ANTLR\Build_Interactions\MyinteractionsVisitor.cpp" />
+    <ClCompile Include="ANTLR\Build_Items\itemsBaseListener.cpp" />
+    <ClCompile Include="ANTLR\Build_Items\itemsBaseVisitor.cpp" />
+    <ClCompile Include="ANTLR\Build_Items\itemsLexer.cpp" />
+    <ClCompile Include="ANTLR\Build_Items\itemsListener.cpp" />
+    <ClCompile Include="ANTLR\Build_Items\itemsParser.cpp" />
+    <ClCompile Include="ANTLR\Build_Items\itemsVisitor.cpp" />
+    <ClCompile Include="ANTLR\Build_Items\MyItemsVisitor.cpp" />
+    <ClCompile Include="ANTLR\Build_WorldObjects\MyWorldObjectsVisitor.cpp" />
+    <ClCompile Include="ANTLR\Build_WorldObjects\WorldObjectsBaseListener.cpp" />
+    <ClCompile Include="ANTLR\Build_WorldObjects\WorldObjectsBaseVisitor.cpp" />
+    <ClCompile Include="ANTLR\Build_WorldObjects\WorldObjectsLexer.cpp" />
+    <ClCompile Include="ANTLR\Build_WorldObjects\WorldObjectsListener.cpp" />
+    <ClCompile Include="ANTLR\Build_WorldObjects\WorldObjectsParser.cpp" />
+    <ClCompile Include="ANTLR\Build_WorldObjects\WorldObjectsVisitor.cpp" />
+    <ClCompile Include="ANTLR\Build_World\MyWorldVisitor.cpp" />
+    <ClCompile Include="ANTLR\Build_World\WorldBaseListener.cpp" />
+    <ClCompile Include="ANTLR\Build_World\WorldBaseVisitor.cpp" />
+    <ClCompile Include="ANTLR\Build_World\WorldLexer.cpp" />
+    <ClCompile Include="ANTLR\Build_World\WorldListener.cpp" />
+    <ClCompile Include="ANTLR\Build_World\WorldParser.cpp" />
+    <ClCompile Include="ANTLR\Build_World\WorldVisitor.cpp" />
+    <ClCompile Include="Managers\EventManager.cpp" />
+    <ClCompile Include="GameObjects\Creature.cpp" />
+    <ClCompile Include="GameObjects\GameObject.cpp" />
+    <ClCompile Include="GameObjects\Player.cpp" />
+    <ClCompile Include="Items\Inventory.cpp" />
+    <ClCompile Include="Items\Item.cpp" />
+    <ClCompile Include="Managers\ConnectionManager.cpp" />
+    <ClCompile Include="Managers\GameManager.cpp" />
+    <ClCompile Include="Managers\InteractionsManager.cpp" />
+    <ClCompile Include="Managers\ItemManager.cpp" />
+    <ClCompile Include="Managers\NodeManager.cpp" />
+    <ClCompile Include="Managers\WorldObjectManager.cpp" />
+    <ClCompile Include="ResidentText.cpp" />
+    <ClCompile Include="TextBaseGame.cpp" />
+    <ClCompile Include="World\Connection.cpp" />
+    <ClCompile Include="World\Node.cpp" />
+    <ClCompile Include="World\WorldObject.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ANTLR\Build_Interactions\interactions.tokens" />
+    <None Include="ANTLR\Build_Interactions\interactionsLexer.tokens" />
+    <None Include="ANTLR\Build_Items\items.tokens" />
+    <None Include="ANTLR\Build_Items\itemsLexer.tokens" />
+    <None Include="ANTLR\Build_WorldObjects\WorldObjects.tokens" />
+    <None Include="ANTLR\Build_WorldObjects\WorldObjectsLexer.tokens" />
+    <None Include="ANTLR\Build_World\World.tokens" />
+    <None Include="ANTLR\Build_World\WorldLexer.tokens" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

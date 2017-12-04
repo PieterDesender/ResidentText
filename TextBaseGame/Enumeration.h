@@ -1,0 +1,41 @@
+#pragma once
+enum class GameState
+{
+	RUNNING,
+	INITIALISE,
+	END,
+	PAUSE,
+	QUIT,
+	INTRO,
+	ENCOUNTER,
+	HELP,
+	OUTRO,
+	DEFEATED,
+	RESTART
+};
+
+enum class InitialiseState {
+	NODESTOVECTOR,
+	INITIALISEDONE,
+	INITIALISECOMPLETE,
+	INITIALISEFAILED,
+	CREATECINTHREAD,
+	CREATEOBJECTS
+};
+
+enum class ItemType {
+	NOTYPE,
+	GREENHERB,
+	REDHERB,
+	KEY,
+	YELLOWHERB
+};
+
+enum class CreatureState
+{
+	WAITING,
+	SLEEPING,
+	MOVING,
+	DEFEATED,
+	DAMAGED
+};
